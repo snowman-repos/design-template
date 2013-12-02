@@ -1,0 +1,28 @@
+doctype 5
+
+html(lang="en")
+
+	head
+
+		meta(charset='utf8')
+		meta(name="viewport", content="width=device-width, minimum-scale=1.0")
+
+		title
+			block title
+
+		link(rel='stylesheet', href='/css/main.css')
+		block css
+
+		link(rel="shortcut icon", href="/icon.png")
+		link(rel="apple-touch-icon-precomposed", href="/icon.png")
+
+	body
+
+		include ../partials/header
+
+		block content
+
+		include ../partials/footer
+
+		script(src='/js/main.js')
+		block script

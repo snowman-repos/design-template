@@ -1,0 +1,26 @@
+// Animation
+// 
+// Styles for animations
+//
+// .fast - fast animation
+// .slow - slow animation
+//
+// Markup:
+// <div class="animation-demo animated {$modifiers}"></div>
+//
+// Styleguide 1.1
+
+.animated.fast
+	transition 					0.2s all ease-in-out
+
+.animated.slow
+	transition 					0.5s all ease-in-out
+
+.animation-demo
+	background 					#333
+	cursor 						pointer
+	height 						45px
+	width 						45px
+
+	&:hover
+		margin-left 			200px
